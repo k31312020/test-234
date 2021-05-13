@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+@import 'assets/styles/mixins';
+
+@include margin-classes;
+@include padding-classes;
+
+.full-width {
+    width: 100%;
+}
+
+.pull-right {
+    float: right;
+}
+
+.success-color{
+    background-color:#1b913a;
+}
+
+.error-color {
+    background-color: #f03c54;
+}
+
+.white-text {
+    color: #ffffff;
+}

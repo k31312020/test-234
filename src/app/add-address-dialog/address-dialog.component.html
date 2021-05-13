@@ -1,0 +1,28 @@
+<!-- form group directive is used for linking the form element with the component -->
+<form class="example-form" [formGroup]="form" fxLayout="column">
+
+    <mat-form-field>
+        <mat-label>Name</mat-label>
+        <!-- fromControlName directive is used for linking input to form -->
+        <!-- The autocomplete attribute ensures that the browser input suggestions do not trigger -->
+        <input autocomplete="none" name="name" matInput formControlName="name" >
+        <!-- mat-error tag will conditionaly render errors if any -->
+        <mat-error *ngIf="nameControl.touched && nameControl.hasError('required')">This field is required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Phone Number</mat-label>
+        <input type="number" autocomplete="none" name="phone" matInput formControlName="phoneNumber">
+        <mat-error *ngIf="phoneControl.touched && phoneControl.hasError('required')">This field is required</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Email Address</mat-label>
+        <input autocomplete="none" email="email-address" matInput formControlName="email">
+        <mat-error *ngIf="emailControl.touched && emailControl.hasError('required')">This field is required</mat-error>
+        <mat-error *ngIf="emailControl.touched && emailControl.hasError('email')">Please enter a valid email</mat-error>
+    </mat-form-field>
+
+    <button type="button" mat-raised-button color="primary" class="cancel-button" (click)="submit(false)">Cancel</button>
+    <button type="button" mat-raised-button color="primary" (click)="submit(true)">Submit</button>
+</form>
