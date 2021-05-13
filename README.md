@@ -5,7 +5,7 @@ However, for demo purposes all firebase configs have been hard coded in app.modu
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 
-You can also clone this project by running 
+You can also clone this project from github public repository by running 
 ```sh
 git clone https://github.com/k31312020/test-234.git
 ```
