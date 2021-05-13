@@ -1,9 +1,18 @@
-# Before you set you
+# Before you set up
 
 This project uses angular firestore as its back end. I am aware that commiting or saving env keys in the app is a very bad practice.
 However, for demo purposes all firebase configs have been hard coded in app.module.ts and 'localhost' has been whitelisted on the firebase console
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
+
+You can also clone this project by running 
+```sh
+git clone https://github.com/k31312020/test-234.git
+```
+
+## Initial setup
+
+Run `npm install` in the project root to install all the dependencies
 
 ## Development server
 
